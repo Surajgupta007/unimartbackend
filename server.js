@@ -12,7 +12,7 @@ connectDB();
 // Init Middleware
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:3000', 'https://unimart-chi.vercel.app', process.env.FRONTEND_URL || '*'],
+    origin: ['http://localhost:5173', 'http://localhost:3000', 'https://unimart-chi.vercel.app', 'https://unimart-n1y41yp1z-sumits-projects-dfda4785.vercel.app', process.env.FRONTEND_URL || '*'],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'x-auth-token', 'Authorization']
